@@ -1,0 +1,36 @@
+:root {
+  --light-board-square: #f0d9b5;
+  --dark-board-square: #b58863;
+  --boardsquaresize: 8vh;
+}
+body {
+  height: 100vh;
+}
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#chess-board {
+  width: calc(8 * var(--boardsquaresize));
+  height: calc(8 * var(--boardsquaresize));
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-r;
+}
+
+.board-square {
+  width: var(--boardsquaresize);
+  height: var(--boardsquaresize);
+}
+
+.light {
+  background-color: var(--light-board-square);
+}
+
+.dark {
+  background-color: var(--dark-board-square);
+}
